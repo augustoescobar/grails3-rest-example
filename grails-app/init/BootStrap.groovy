@@ -1,9 +1,13 @@
-import grails3.rest.example.Book
+import grails3.rest.exampe.auth.Role
+import grails3.rest.exampe.auth.User
 
 class BootStrap {
 
     def init = { servletContext ->
-        new Book(title: "My Book").save()
+
+//        def role = Role.findOrCreateByAuthority("ROLE_ADMIN")
+
+
     }
     def destroy = {
     }
